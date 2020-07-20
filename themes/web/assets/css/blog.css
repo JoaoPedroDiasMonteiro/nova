@@ -1,0 +1,54 @@
+/*
+Blog Post
+ */
+.blog-post-content h1, .blog-post-content h2, .blog-post-content h3, .blog-post-content h4, .blog-post-content h5 {
+    font-weight: 700;
+    color: #3c4858 !important;
+}
+
+.blog-post-content .author {
+    margin-left: auto;
+}
+
+.blog-post-content .author img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.blog-post-content .share {
+    width: 100%;
+    border-bottom: 1px solid rgba(60, 72, 88, 0.23);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.blog-post-content .share h3 {
+    display: inline-block;
+}
+
+.blog-post-content .share .social {
+    float: right;
+}
+
+.blog-post-content .share button {
+    border-radius: 30px;
+}
+
+.blog-post-content .share button:focus {
+    outline: none;
+}
+
+.blog-post-content .share button:hover {
+    opacity: 0.8;
+}
+
+.blog-post-content .share .facebook {
+    background-color: #3b5998 !important;
+}
+
+.blog-post-content .share .twitter {
+    background-color: #55acee !important;
+}

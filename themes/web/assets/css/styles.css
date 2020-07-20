@@ -1,0 +1,351 @@
+:root {
+    --primary-color: #d81b60;
+    --primary-color-light: #ff5c8d;
+    --primary-color-dark: #a00037;
+}
+
+/*
+Setup
+ */
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #eee;
+}
+
+.title {
+    font-weight: 700;
+}
+
+.text-dark {
+    color: #999 !important;
+}
+
+.text-dark .title {
+    color: #3c4858 !important;
+}
+
+.light-text {
+    color: hsla(0,0%,100%,.8) !important;
+}
+
+.light-text .title {
+    color: white !important;
+}
+
+.shadow-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.shadow-2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-3 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.shadow-4 {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.shadow-5 {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+
+.button-primary {
+    color: white !important;
+    background-color: var(--primary-color);
+    transition: background-color .4s;
+    padding-right: 1.3em !important;
+    padding-left: 1.3em !important;
+}
+
+.button-primary:hover {
+    color: white;
+    background-color: var(--primary-color-dark);
+}
+
+.button-white {
+    background-color: white;
+    color: #3c4858 !important;
+    text-shadow: none;
+}
+
+.button-white:hover {
+    background-color: #d0d0d0 !important;
+}
+
+.primary-color {
+    color: var(--primary-color) !important;
+}
+
+/*
+Navbar
+ */
+.navbar {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar-nav .dropdown-menu {
+    margin-bottom: 5px;
+}
+
+
+/*
+MainCTA
+ */
+
+.mainBanner {
+    width: 100%;
+    height: 92vh;
+    background: rgb(216, 27, 96);
+    background: radial-gradient(circle, rgba(216, 27, 96, 1) 0%, rgba(160, 0, 55, 1) 100%);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.mainBanner-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(216, 27, 96);
+    background: radial-gradient(circle, rgba(216, 27, 96, 1) 0%, rgba(160, 0, 55, 1) 70%);
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+}
+
+.mainBanner .background-image-container, .mainBanner .background-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainBanner .mainBanner-content-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.mainBanner .mainBanner-content-container h1 {
+    max-width: 680px;
+    margin: auto;
+}
+
+.mainBanner .mainBanner-content-container h2 {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/*
+Content container
+ */
+
+.nova-content-container {
+    margin-top: -60px;
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 6px;
+    position: relative;
+    background-color: white;
+    min-height: 200px;
+}
+
+
+/*
+Our services
+ */
+
+/*
+Blog List
+ */
+
+.blog-list-item {
+    color: unset;
+}
+
+.blog-list-item:hover {
+    text-decoration: none;
+    color: unset;
+}
+
+.blog-list-category {
+    font-size: .75rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.blog-card-image-container {
+    position: relative;
+    height: 220px;
+}
+
+.blog-card-image-container img {
+    background-color: gray;
+    position: absolute;
+    top: -30px;
+    height: 100%;
+    width: 95%;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/*
+Plans
+ */
+
+.plans-bg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+    min-height: 300px;
+}
+
+.plans .plans-bg .container {
+    z-index: 1;
+    position: relative;
+}
+
+.plans .bg-plan {
+    background: rgb(216, 27, 96);
+    background: linear-gradient(60deg, var(--primary-color) 0%, var(--primary-color-dark) 100%);
+}
+
+.plans .plan-item .plan-name {
+    font-size: 1.5em;
+}
+
+.plans .plan-item .plan-price small {
+    font-size: 0.5em !important;
+    position: relative;
+    top: -17px;
+}
+
+.plans .plan-item .plan-price {
+    font-size: 3em;
+    text-align: center;
+}
+
+.plans .plan-item .plan-resources h3:first-child {
+    padding-top: 0;
+}
+
+.plans .plan-item .plan-resources h3 {
+    padding-top: 14px;
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 14px;
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.plans .plan-item .plan-resources .border-free {
+    border-bottom: 1px solid #b7b7b7;
+}
+
+.plans .plan-item .plan-resources .border-premium {
+    border-bottom: 1px solid hsla(0,0%,100%,.5);;
+}
+
+/*
+depositions
+ */
+
+.depositions .thumb {
+    border-radius: 50%;
+    width: 50%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.projects .item h3 {
+    position: relative;
+    top: 5px;
+    margin-left: 8px;
+}
+
+.projects .item p {
+    margin-left: 8px;
+}
+
+.projects .project-image {
+    position: relative;
+    top: 0;
+    left: 0;
+    min-height: 450px;
+}
+
+.projects .project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.projects .project-image .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+
+/*
+Footer
+ */
+
+.site-footer h1 {
+    display: inline-block;
+}
+
+.site-footer ul {
+    list-style: none;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.site-footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.site-footer ul li:last-child {
+    margin-right: 0;
+}
+
+.site-footer ul li h2 {
+    font-size: 0.9em;
+}
+
+.site-footer ul li a {
+    color: unset;
+}
